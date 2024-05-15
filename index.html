@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D3 Visualization</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 style="color: rgb(75, 71, 71); padding-top: 30px; padding-bottom: 15px;" class = "thin-underline"> Exploring Academic Transitions: High Achievers' Journey from High School to College </h1>
+    <p style="color: rgb(125, 116, 116); opacity: 0.75;"><b>Audra Spokas-Jaros <br>Jovanna Fernando <br>Sia Patodia </b></p>
+    <p style="padding: 200px; padding-bottom: 35px; padding-top: 35px; font-size: 22px;"> The transition from high school to college marks a critical changing point in a student’s academic journey. Oftentimes high achievers enter college with deceitfully high expectations and the reality of college academics can be upsetting. This project aims to investigate the academic trajectory of high-achieving high school students as they transition to their first year of college. The dataset can be found here. We are interested in examining the academic performance trends of students who achieved high GPAs in high school (3.0 or above rounded to 1 decimal point) during their initial year in college. Furthermore, we are interested in exploring whether there are disparities in academic performance between male and female students, and thus how they adapt to their first year of college from an academic standpoint. Enter your GPA to see your percentile ranking among all students. </p>
+    <div id="scatterplot">
+        <h1>Distribution of First Year College Student's GPA</h1> 
+        <div id="toggleButtons">
+            <label class="toggleButton" for="maleToggle">Male</label>
+            <input type="checkbox" id="maleToggle" checked>
+            <label class="toggleButton" for="femaleToggle">Female</label>
+            <input type="checkbox" id="femaleToggle" checked>
+
+            <input type="text" id="inputGPA" placeholder="Enter Your GPA">
+            <button id="showButton">Enter</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <p style="padding: 200px; padding-top: 35px; font-size: 22px;"> To gain a better understanding of different distributions with respect to the male and female students, the data points were represented by a circle, either blue for male or pink for female (these stereotypical color assignments quickly convey to the viewer the difference we are trying to display). Since there are so many data points in this set (665,including our filtering), a tooltip was integrated so that the viewer could get more information about each student. The tooltip pop-up includes the student’s unique ID, assigned as the data set gets loaded into the visualization, the student’s sex, and GPA. Additionally, to add a secondary element of user interaction, a user can input their own GPA to visualize their percentile in the provided data-set and gauge a general understanding of their standing as a first-year college student. 
+        <br><br>Development Process: The initial work for this visualization was understanding the data and figuring out trends to determine what visualization would be most effective. After completing the filtering process, we began with getting the basic formatting correct and loading in the data to begin populating the preliminary scatter plot, to test basic functionality. Before adding any additional data inputs which would make it complicated, we worked on adding the tooltip to improve user engagement on the pre-existing data points. After ensuring there were no bugs, we worked to add additional features such as filtering based on gender and inclusion of your own GPA to gauge your standing in respect to other first-year students. One of the main issues we faced which majorly hampered our progress was the inclusion of the interactive tooltip for the new inputted GPA. After fixing all the bugs, we spent most of the rest of our time making the plot more visually appealing by choosing the best-fitting fonts, colors, size, opacities, spacing, etc.</p>
+</body>
+</html>
+

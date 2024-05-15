@@ -1,0 +1,93 @@
+#scatterplot {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+.tooltip {
+    font-size: 14px;
+    
+}
+.x-axis .domain {
+    display: none;  
+}
+.x-axis .tick line {
+    display: none;  
+}
+
+.customFont {
+    font-family: Arial, sans-serif;
+}
+
+.thin-underline {
+    display: inline-block;
+    border-bottom: 0.8px solid; 
+    font-weight: bold; 
+    padding-bottom: 0px; 
+    width: 100%; 
+    text-align: center;
+}
+
+body {
+    text-align: center;
+}
+
+p {
+    padding-top: 40px;
+}
+
+#toggleButtons input[type="checkbox"] {
+    display: none;
+}
+
+label[for="maleToggle"], label[for="femaleToggle"] {
+    display: inline-block;
+    width: 100px;
+    padding: 10px;
+    border: 1px solid #000;
+    font-size: 18px;
+    text-align: center;
+    margin-right: 40px;
+    cursor: pointer;
+    position: relative;
+    margin-bottom: 35px;
+    margin-top: 20px;
+}
+
+/* Custom square for the checkbox */
+label[for="maleToggle"]::before, label[for="femaleToggle"]::before {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #000;
+    background-color: #fff;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+label[for="maleToggle"] {
+    background-color: lightblue; 
+    margin-right: -4px;
+    border-right: none;
+    border-radius: 5px 0 0 5px;
+}
+
+label[for="femaleToggle"] {
+    background-color: pink; 
+    border-left: 2px dotted;
+    border-radius: 0 5px 5px 0;
+}
+
+#toggleButtons input[type="text"] {
+    font-size: 15px;
+    width: 200px;
+    height: 30px;
+}
+
+#showButton {
+    margin-left: 15px;
+}
+
+
